@@ -1,0 +1,6 @@
+APScheduler==3.0.3
+argparse==1.2.1
+watchdog==0.8.3
+mutagen==1.31
+gevent==1.0.2
+greenlet==0.4.9

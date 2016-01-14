@@ -1,0 +1,34 @@
+{
+  "name": "TestFramework",
+  "type": "mozCingi.fuzzers.sample.sampleFuzzer.SampleFuzzer",
+  "generator":{
+    "class_name":"mozCingi.fuzzers.sample.sampleGenerator.SampleGenerator",
+    "gen_num":"3",
+    "conf":{
+      "desc": "Sample Generator"
+    }
+  },
+  "executor":{
+    "class_name":"mozCingi.fuzzers.sample.sampleExecutor.SampleExecutor",
+    "gen_num":"3",
+    "conf":{
+      "desc": "Sample Executor"
+    }
+  },
+  "parser":{
+    "class_name":"mozCingi.fuzzers.sample.sampleParser.SampleParser",
+    "gen_num":"2",
+    "conf":{
+      "desc": "Sample Parser"
+    }
+  },
+  "collector":{
+    "class_name":"mozCingi.fuzzers.sample.sampleCollector.SampleCollector",
+    "gen_num":"1",
+    "conf":{
+      "desc": "Sample Collector"
+    }
+  }
+
+}
+
