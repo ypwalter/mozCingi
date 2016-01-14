@@ -35,7 +35,7 @@ class AbsFuzzer(object):
             step_class = getattr(step_module, class_name)
             for obj_num in xrange(int(self.configurations[step]['gen_num'])):
                 step_class_name = class_name + "_" + str(obj_num)
-                step_objs[obj_num] = step_class(step_class_name, **self.configurations[step]['conf'])
+                step_objs[obj_num] = step_class(step_class_name, self.name, obj_num, **self.configurations[step]['conf'])
                 running_threads.append(gevent.spawn(step_objs[obj_num].run))
             gevent.joinall(running_threads)
 

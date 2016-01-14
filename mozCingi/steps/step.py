@@ -2,9 +2,15 @@ __author__ = 'shako'
 class AbsStep(object):
 
     configurations = {}
+    DEFAULT_ROOT_DATA_DIR = "data"
+    DEFAULT_ROOT_OUTPUT_DIR = "output"
+    DEFAULT_ROOT_LOG_DIR = "log"
+    DEFAULT_ROOT_TMP_DIR = "tmp"
 
-    def __init__(self, name, **parameters):
+    def __init__(self, name, fuzzer_name, obj_index, **parameters):
         self.name = name
+        self.fuzzer_name = fuzzer_name
+        self.obj_index = obj_index
         self.read_configuration(**parameters)
 
     def read_configuration(self, **kwargs):

@@ -4,7 +4,6 @@ class AbsExecutor(AbsStep):
     pack_file_name = ""
     launch_file_name = ""
     output_dir_path = ""
-    tmp_dir_path = ""
 
     def remove_src_conf(self):
         pass

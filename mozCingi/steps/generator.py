@@ -22,6 +22,5 @@ class AbsGenerator(AbsStep):
         self.generate_steps()
         self.generate_execution_file()
         self.pack_files()
-        self.generate_conf_file()
 
 
