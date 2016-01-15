@@ -1,5 +1,5 @@
 {
-  "name": "TestFramework",
+  "name": "SampleFuzzer",
   "type": "mozCingi.fuzzers.sample.sampleFuzzer.SampleFuzzer",
   "generator":{
     "class_name":"mozCingi.fuzzers.sample.sampleGenerator.SampleGenerator",
